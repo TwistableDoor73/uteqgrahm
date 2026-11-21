@@ -1,0 +1,16 @@
+{
+  "name": "proyecto-pwa",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "http-server public -c-1",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Abraham Durán",
+  "license": "ISC",
+  "description": "App sencilla parecida a Instagram, que permite subir fotos y verlas en un feed. Se puede instalar en el dispositivo y funciona sin conexión a internet.",
+  "devDependencies": {
+    "http-server": "^14.1.1"
+  }
+}
