@@ -65,7 +65,7 @@ function isInArray(string, array) {
 }
 
 self.addEventListener('fetch', function (event) {
-  var url = 'https://uteqgram-pwa-default-rtdb.firebaseio.com/post.json';
+  var url = 'https://uteqgram-c369d-default-rtdb.firebaseio.com/posts.json';
 
   if (event.request.url.indexOf(url) > -1) {
     // Network first; copia en IndexedDB
@@ -120,7 +120,7 @@ self.addEventListener('sync', function(event) {
         .then(function(data) {
           // Promise.all + map: cada post conserva su propio dt y waitUntil espera todos los envíos
           return Promise.all(data.map(function(dt) {
-            return fetch('https://uteqgram-pwa-default-rtdb.firebaseio.com/post.json', {
+            return fetch('https://uteqgram-c369d-default-rtdb.firebaseio.com/post.json', {
               method: 'POST',
               headers: {
                 'Content-Type': 'application/json',

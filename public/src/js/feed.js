@@ -68,7 +68,7 @@ function updateUI(data) {
   }
 }
 
-var url = 'https://uteqgram-pwa-default-rtdb.firebaseio.com/post.json';
+var url = 'https://uteqgram-c369d-default-rtdb.firebaseio.com/post.json';
 var networkDataReceived = false;
 
 fetch(url)

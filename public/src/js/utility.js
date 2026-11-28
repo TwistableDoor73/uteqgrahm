@@ -1,5 +1,5 @@
 // Usa idb v7 (global `idb`)
-var DEFAULT_IMAGE = '/src/images/sf-boat.jpg';
+var DEFAULT_IMAGE = 'https://firebasestorage.googleapis.com/v0/b/uteqgram-c369d.firebasestorage.app/o/sf-boat.jpg?alt=media&token=46cbc7c7-b051-482d-9efa-8196dfce75ed';
 var dbPromise = idb.openDB('posts-store', 2, {
   upgrade: function (db) {
     if (!db.objectStoreNames.contains('posts')) {
